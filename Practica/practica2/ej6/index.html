@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Men&uacutees de Navegaci&oacuten</title>
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>Uso de Nav</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="https://google.com.ar">Google</a></li>
+          <li><a href="https://gmail.com">Gmail</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="about.html">Sobre Mi</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="menu" contextmenu="mymenu">
+      <p>Right Click to open menu</p>
+      <menu type="context" id="mymenu">
+        <menuitem label="Save" onclick="alert('Opción Guardar')" >
+        </menuitem>
+      <menu label="Varios">
+          <menuitem label="Recargar" onclick="window.location.reload()">
+          </menuitem>
+          <menuitem label="Ir a Google" onclick="window.open('https://google.com.ar')">
+          </menuitem>
+      </menu>
+    </div>
+    <aside class="">
+      <p>Como conclusi&oacuten obtengo que <b>&ltnav&gt</b> sirve para hacer menú de navegacion horizontales y verticales, y con <b>&ltmenu&gt</b> nos facilita la creación de menúes emergentes</p>
+    </aside>
+    <div id="counter"></div>
+    <script type="text/javascript">
+      if(localStorage.pagecount){
+        localStorage.pagecount = Number(localStorage.pagecount) + 1;
+      }
+      else {
+        localStorage.pagecount = 1;
+      }
+      document.getElementById('counter').innerHTML=("Numero de visitas:<b> "+localStorage.pagecount+"</b> veces");
+    </script>
+  </body>
+</html>
