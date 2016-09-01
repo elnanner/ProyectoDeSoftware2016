@@ -1,0 +1,51 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+body{
+  background: #e6e6e6;
+}
+
+header, .main, footer{
+  background: white;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+header nav{
+  background: grey;
+  padding: 2%;
+}
+
+.titulo{
+  background: red;
+  padding: 2%;
+}
+
+.main .menu{
+  width: 34%;
+  float: left;
+  background: yellow;
+  padding: 5%;
+  box-sizing: border-box;
+
+}
+
+.main .articles{
+  width: 66%;
+  background: orange;
+  float: right;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+footer{
+  background-color: black;
+  padding: 2%;
+  color: white;
+  text-align: center;
+  clear: both;
+  box-sizing: border-box;
+}
