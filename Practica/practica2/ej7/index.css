@@ -1,0 +1,27 @@
+body{
+  background-color: #B43104;
+}
+
+nav{
+  height: 200px;
+}
+nav a{
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  display: inline-block;
+  float: left;
+}
+a:hover{
+  background-color: green;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 5px 5px 10px red;
+}
+@media screen and (max-width:500px) {
+  nav a{
+    float: none;
+    display: block;
+  }
+}
