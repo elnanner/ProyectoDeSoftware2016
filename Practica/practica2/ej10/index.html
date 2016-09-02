@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Imágen HD</title>
+    <style media="screen">
+      #imagen{
+        width: 90%;
+        image-resolution: from-image;
+      }
+
+      @media screen and (max-width:768px) {
+        .wrapper{
+          width: 100%;
+          padding: 10px;
+          background: black;
+          animation: cambiarColor 5s;
+        }
+        #imagen{
+          padding: 10px;
+          width: 80%;
+          box-sizing: content-box;
+
+        }
+        @-moz-keyframes cambiarColor{
+          0%{background: black;}
+          50%{background: red;}
+          100%{background: black;}
+        }
+      }
+      @media screen and (max-width:320px) and (max-width:768px){
+        .wrapper{
+          width: 100%;
+          padding: 10px;
+          background: blue;
+          animation: cambiarColor 5s;
+        }
+        #imagen{
+          padding: 10px;
+          width: 80%;
+
+        }
+        @-moz-keyframes cambiarColor{
+          0%{background: blue;}
+          50%{background: yellow;}
+          100%{background: blue;}
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img id="imagen" src="http://lorempixel.com/1920/720" alt="">
+    </div>
+  </body>
+</html>
