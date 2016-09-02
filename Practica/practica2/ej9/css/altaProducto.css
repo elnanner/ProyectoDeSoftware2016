@@ -25,5 +25,5 @@ input{
   width: 25%;
 }
 input:focus{
-  border: 1px solid grey;
+  border: 1px solid grey;  
 }
