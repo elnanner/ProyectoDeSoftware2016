@@ -25,5 +25,10 @@ input{
   width: 25%;
 }
 input:focus{
-  border: 1px solid grey;  
+  border: 1px solid grey;
+}
+
+input[type="submit"]{
+  width: 25%;
+  background: grey;
 }
