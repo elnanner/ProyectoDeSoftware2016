@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  padding: 10px;
+  background: grey;
+}
+body{
+  background: #cecece;
+  text-align: left;;
+}
+
+label{
+  padding: 10px;
+  margin: 5px;
+
+}
+
+input{
+  position: relative;
+  margin:5px;
+  padding: 10px;
+  display: block;
+  width: 25%;
+}
+input:focus{
+  border: 1px solid grey;
+}
