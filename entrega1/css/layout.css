@@ -3,9 +3,14 @@
   padding: 0;
 }
 body{
-  background: #ccc;
+  background: #cecece;
+  
 }
-
+header .logo{
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
 header, .main, footer{
   width: 90%;
   max-width: 1270px;
@@ -13,7 +18,7 @@ header, .main, footer{
 }
 
 header nav{
-  background: #cea;
+  background: #cecece;
   overflow: hidden;
 }
 
@@ -33,7 +38,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-  background: #cec;
+  background: #fff;
+  color: #000;
 }
 
 .main .articles{
@@ -43,24 +49,8 @@ header nav ul li a:hover{
   color: white;
 }
 
-aside{
-  width:14%;
-  background: green;
-  margin-right: 1%;
-  float: left;
-  padding: 20px;
-  box-sizing: border-box;
-
-}
-.articles article{
-  margin-bottom: 1%;
-}
-.articles article:hover{
-  background: #fff;
-  color: #000;
-}
 footer{
-  background: blue;
+  background: #000;
   color: #fff;
   margin-top: 1%;
   clear: both;

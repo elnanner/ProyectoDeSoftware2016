@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alta Producto</title>
+
+    <link rel="stylesheet" href="css/altaProducto.css">
+  <body>
+    <header>
+      <h1>Alta Nuevo Producto</h1>
+    </header>
+    <div class="wrapper">
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" name="nombre" value="" required autofocus>
+
+        <label for="marca">Marca:</label>
+        <input id="marca" type="text" name="marca" value="" required>
+
+        <label for="codigoBarra">Codigo de Barra:</label>
+        <input id="codigoBarra" type="text" name="codigoBarra" value="" required>
+
+        <label for="stock">Cantidad de Stock:</label>
+        <input id="stock" type="number" name="stock" value="" required min="0">
+
+        <label for="minStock">Cantidad Mínima de Stock:</label>
+        <input id="minStock" type="number" name="minStock" value="" required min="0">
+
+        <label  for="categoria">Categoría</label>
+        <select id="categoria" class="" name="categoria">
+
+        </select>
+
+        <label for="proveedor">Proveedor:</label>
+        <input id="proveedor" type="text" name="proveedor" value="" required>
+
+        <label for="precioUnitario">Precio de Venta Unitario:</label>
+        <input id="precioUnitario" type="number" name="precioUnitario" value="" min="0" required >
+
+        <label for="fechaAlta">Fecha de Alta</label>
+        <input id="fechaAlta" type="datetime" name="fechaAlta" value="" disabled required>
+        <br>
+        <input type="submit" name="guardar" value="Dar de Alta">
+        <br>
+        <input type="button" name="cancelar" value="Cancelar">
+        <br>
+      </form>
+    </div>
+  </body>
+</html>
