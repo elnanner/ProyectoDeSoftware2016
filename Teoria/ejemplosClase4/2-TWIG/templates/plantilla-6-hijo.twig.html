@@ -1,0 +1,16 @@
+{% extends "plantilla-6.twig.html" %}
+
+{% block title %}Agregando en el título{% endblock %}
+{% block head %}
+{{ parent() }}
+     <style type="text/css">
+          .important { color: #336699; }
+     </style>
+{% endblock %}
+{% block content %}
+<h1>Probando herencia en Twig</h1>
+    <p class="important">
+         Para ver la diferencia elimina el bloque content o agregue una llamada a parent.
+    </p>
+   {{ parent() }}
+{% endblock %}

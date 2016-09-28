@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recursos</title>
+    </head>
+    <body>
+        <h1>Recursos</h1>
+        <ul>
+        {% for item in resources %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

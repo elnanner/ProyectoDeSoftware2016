@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Mi cuarto Template con Twig</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1> Números impares</h1> 
+<ul>
+{% for num in range(1, 20, 2) %}
+  <li>{{ num }} </li>
+{% endfor %}
+</ul>
+</body>
+</html>
+

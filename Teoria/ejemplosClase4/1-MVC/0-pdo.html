@@ -1,0 +1,62 @@
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+	 <title>Ejemplo Proyecto FORMS</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    fieldset {
+         display: inline-block;
+    }
+    label { display: table-cell; }
+	input { display: table-cell; }
+</style>
+</head>
+<body>
+
+<form action="0-pdo.php" method="POST">
+<fieldset>
+<legend>POST</legend>
+<div>
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre" placeholder="">
+</div>
+<div>
+<label for="valor1">Valor 1:</label>
+<input type="text" name="valor1" id="valor1" placeholder="">
+</div>
+<div>
+<label for="valor2">Valor 2:</label>
+<input type="text" name="valor2" id="valor2" placeholder="">
+</div>
+<div>
+<input type="submit" name="ESTE_ES_UN_POST" value="POST">
+</div>
+</fieldset>
+</form>
+
+
+<form action="0-pdo.php" method="GET">
+<fieldset>
+<legend>GET</legend>
+<div>
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre" placeholder="">
+</div>
+<div>
+<label for="valor1">Valor 1:</label>
+<input type="text" name="valor1" id="valor1" placeholder="">
+</div>
+<div>
+<label for="valor2">Valor 2:</label>
+<input type="text" name="valor2" id="valor2" placeholder="">
+</div>
+<div>
+<input type="submit" name="ESTE_ES_UN_GET" value="GET">
+</div>
+</fieldset>
+</form>
+
+</form>
+</body>
