@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Mi quinto Template con Twig</title> </head>
+<body>
+
+<h1> {{ titulo }}</h1> 
+ 
+{% if lista|length > 0 %}
+	<ul>
+	{% for alu in lista %}
+		<li>{{ alu }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+	<p> Ups!! Parece que no tenemos alumnos....</p>
+{% endif %}
+
+</body>
+</html>
+

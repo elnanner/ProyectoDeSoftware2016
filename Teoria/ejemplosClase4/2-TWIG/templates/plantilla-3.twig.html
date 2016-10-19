@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Mi tercer Template con Twig</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+ 
+{% filter upper %}
+Este texto aparece en mayusculas 
+{% endfilter %}
+
+<p>Y lo que sigue es el arreglo concatenado por el símbolo $$ -> <strong> {{ arreglo|join(' $$ ') }} </strong> </p>
+
+
+</body>
+</html>
+

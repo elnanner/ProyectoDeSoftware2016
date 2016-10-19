@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Mi primer Template con Twig</title> </head>
+<body>
+
+<h1> Hola {{  nombre }} !!</h1>
+<p>Estamos  probando este sistema de templates ...</p>
+
+<ul id="lista">
+
+	{% for item in lista %}
+		<li> item: {{ item }} </li>
+	{% endfor %}
+</ul>
+
+</body>
+</html>

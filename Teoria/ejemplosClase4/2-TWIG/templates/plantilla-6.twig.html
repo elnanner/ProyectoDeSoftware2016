@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	{% block head %}
+	<link rel="stylesheet" href="style.css" />
+	<title>{% block title %}{% endblock %} - Proyecto</title>
+	{% endblock %}
+</head>
+<body>
+	
+	<div id="content">{% block content %}
+	{% if lista|length > 0 %}
+	<ul>
+	{% for alu in lista %}
+		<li>{{ alu }}</li>
+    {% endfor %}
+    </ul>
+	{% else %}
+		<p> Ups!! Parece que no tenemos alumnos....</p>
+	{% endif %}
+
+{% endblock %}</div>
+	<div id="footer">
+		{% block footer %}
+			&copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+		{% endblock %}
+	</div>
+
+</body>
+</html>
